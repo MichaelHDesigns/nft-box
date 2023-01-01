@@ -11,7 +11,7 @@ contract BoredPetsNFT is ERC721URIStorage {
   address marketplaceContract;
   event NFTMinted(uint256);
 
-  constructor(address _marketplaceContract) ERC721("Bored Pets Yacht Club", "BPYC") {
+  constructor(address _marketplaceContract) ERC721("ALT NFT Market", "ANFT") {
     marketplaceContract = _marketplaceContract;
   }
 
