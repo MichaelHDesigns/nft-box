@@ -1,8 +1,8 @@
 // create a file at the root of your project and name it .env -- there you can set process variables
 // like the mnemomic below. Note: .env is ignored by git in this project to keep your private information safe
 require('dotenv').config();
-const ganacheMnemonic = process.env["GANACHE_MNEMONIC"];
-const kovanMnemonic = process.env["KOVAN_MNEMONIC"];
+//const ganacheMnemonic = process.env["GANACHE_MNEMONIC"];
+//const kovanMnemonic = process.env["KOVAN_MNEMONIC"];
 const mnemonic = 'test test test test test test test test test test test junk' // process.env["MNEMONIC"];
 
 const infuraKey = process.env["INFURA_KEY"];
@@ -27,8 +27,8 @@ module.exports = {
 
   networks: {
     development: {
-      url: "http://127.0.0.1:7545",
-      network_id: "*",
+      url: "http://127.0.0.1:8545",
+      network_id: "2330",
     },
     ganache: {
       network_id: 108,
