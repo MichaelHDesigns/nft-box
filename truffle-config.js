@@ -21,7 +21,7 @@
 // create a file at the root of your project and name it .env -- there you can set process variables
 // like the mnemomic below. Note: .env is ignored by git in this project to keep your private information safe
 require('dotenv').config();
-const kovanMnemonic = process.env["KOVAN_MNEMONIC"];
+//const kovanMnemonic = process.env["KOVAN_MNEMONIC"];
 const infuraKey = process.env["INFURA_KEY"];
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
@@ -56,8 +56,8 @@ module.exports = {
     //
     development: {
       host: "127.0.0.1",     // Localhost (default: none)
-      port: 7545,            // Standard Ethereum port (default: none)
-      network_id: "*",       // Any network (default: none)
+      port: 8545,            // Standard Ethereum port (default: none)
+      network_id: "2330",       // Any network (default: none)
     },
     local_ethereum: {
       network_id: 31337,
