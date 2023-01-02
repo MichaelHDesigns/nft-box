@@ -31,12 +31,12 @@ module.exports = {
       network_id: "2330",
     },
     ganache: {
-      network_id: 108,
+      network_id: 2330,
       networkCheckTimeout: 100000,
       provider: function () {
         return ganache.provider({
           mnemonic: ganacheMnemonic,
-          network_id: 108,
+          network_id: 2330,
           default_balance_ether: 100,
         })
       }
@@ -44,7 +44,7 @@ module.exports = {
     // for use with local environment -- see README and list of available
     // scripts in package.json for steps to get this running on your local machine
     optimistic_ethereum: {
-      network_id: 17,
+      network_id: 2330,
       provider: function () {
         return new HDWalletProvider({
           mnemonic: {
@@ -53,13 +53,13 @@ module.exports = {
           providerOrUrl: "http://127.0.0.1:8545/",
           addressIndex: 0,
           numberOfAddresses: 1,
-          chainId: 17
+          chainId: 2330
         })
       }
     },
     optimistic_kovan: {
-      network_id: 69,
-      chain_id: 69,
+      network_id: 2330,
+      chain_id: 2330,
       provider: function () {
         return new HDWalletProvider(kovanMnemonic, "https://optimism-kovan.infura.io/v3/" + infuraKey, 0, 1);
       }
@@ -67,8 +67,8 @@ module.exports = {
     // requires a mainnet mnemonic; you can save this in .env or in whatever secure location
     // you wish to use
     optimistic_mainnet: {
-      network_id: 10,
-      chain_id: 10,
+      network_id: 2330,
+      chain_id: 2330,
       provider: function () {
         return new HDWalletProvider(mainnetMnemonic, "https://optimism-mainnet.infura.io/v3/" + infuraKey, 0, 1);
       }
