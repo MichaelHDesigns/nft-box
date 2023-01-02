@@ -4,10 +4,10 @@ import Web3Modal from 'web3modal'
 import { create as ipfsHttpClient } from 'ipfs-http-client'
 import { useRouter } from 'next/router'
 
-import Marketplace from '../contracts/optimism-contracts/Marketplace.json'
-import BoredPetsNFT from '../contracts/optimism-contracts/BoredPetsNFT.json'
-// import Marketplace from '../contracts/ethereum-contracts/Marketplace.json'
-// import BoredPetsNFT from '../contracts/ethereum-contracts/BoredPetsNFT.json'
+//import Marketplace from '../contracts/optimism-contracts/Marketplace.json'
+//import BoredPetsNFT from '../contracts/optimism-contracts/BoredPetsNFT.json'
+import Marketplace from '../contracts/ethereum-contracts/Marketplace.json'
+import BoredPetsNFT from '../contracts/ethereum-contracts/BoredPetsNFT.json'
 
 const projectId = process.env["NEXT_PUBLIC_IPFS_KEY"];
 const projectSecret = process.env["NEXT_PUBLIC_IPFS_SECRET"];
