@@ -3,10 +3,10 @@ import Web3Modal from 'web3modal';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import Marketplace from '../contracts/optimism-contracts/Marketplace.json'
-import BoredPetsNFT from '../contracts/optimism-contracts/BoredPetsNFT.json'
-// import Marketplace from '../contracts/ethereum-contracts/Marketplace.json'
-// import BoredPetsNFT from '../contracts/ethereum-contracts/BoredPetsNFT.json'
+//import Marketplace from '../contracts/optimism-contracts/Marketplace.json'
+//import BoredPetsNFT from '../contracts/optimism-contracts/BoredPetsNFT.json'
+import Marketplace from '../contracts/ethereum-contracts/Marketplace.json'
+import BoredPetsNFT from '../contracts/ethereum-contracts/BoredPetsNFT.json'
 
 export default function Home() {
   const [nfts, setNfts] = useState([])
